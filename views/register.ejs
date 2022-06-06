@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+    <link  href="/css/login.css">
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="form-wrapper" >
+    
+
+<h1  class="text-center ftsz-24"> REGISTER</h1>
+<p class="status text-center" style="color: #fff;"> <%= mess %></p>
+<form action="/register" method="POST">
+    <div class="form-group form-group-lg">
+        <label for="name" class="col-sm-3 col-form-label">
+           Name:
+        </label>
+        <div class="col-sm-9">
+        <input type="text" name="name" id="name" class="form-control" >
+    </div>
+    </div>
+    <div class="form-group  form-group-lg">
+        <label for="surname" class="col-sm-3 col-form-label">
+           Surname:
+        </label>
+        <div class="col-sm-9">
+        <input type="text" name="surname" id="surname" class="form-control">
+    </div>
+    </div>
+    <div class="form-group  form-group-lg">
+        <label for="email" class="col-sm-3 col-form-label">
+           Email Id:
+        </label>
+        <div class="col-sm-9">
+        <input type="email" name="email" ,id="email" class="form-control">
+    </div>
+    </div>
+    <div class="form-group form-group-lg ">
+        <label for="employeeId" class="col-sm-3 col-form-label">
+           Employee Id:
+        </label> 
+        <div class="col-sm-9">
+        <input type="text" name="employeeId" ,id="employeeId" class="form-control">
+    </div>
+    </div>
+    <div class="form-group  form-group-lg">
+        <label for="company" class="col-sm-3 col-form-label">
+           Company:
+        </label> <div class="col-sm-9">
+        <input type="text" name="company" ,id="company" class="form-control">
+    </div>
+    </div>
+    <div class="form-group  form-group-lg">
+        <label for="password" class="col-sm-3 col-form-label">
+           Password:
+        </label>
+        <div class="col-sm-9">
+        <input type="password" name="password" ,id="password" class="form-control">
+    </div>
+    </div>
+    <div class="form-group  form-group-lg ">
+        <label for="password2" class="col-sm-3 col-form-label">
+           Confirm Password:
+        </label>
+        <div class="col-sm-9">
+        <input type="password" name="password2" ,id="password2" class="form-control">
+    </div>
+    </div>
+<br>
+    <button type="submit" class="btn btn-primary col-sm-8 offset-sm-2 text-center">Register</button>
+</form>
+
+<a href="/">Login </a>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
