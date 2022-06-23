@@ -40,7 +40,7 @@ const getRegister = (req, res, next) => {
 
 
 const postRegister = async (req, res, next) => {
-    const { name, surname,email,employeeId, company, password, password2 } = req.body;
+    const { name, surname,email,employeeId,designation, company, password, password2 } = req.body;
     if (
         name.length < 1 ||
         email.length < 1 ||
@@ -60,6 +60,7 @@ const postRegister = async (req, res, next) => {
         name: name,
         surname: surname,
         email: email,
+        designation :designation,
         employeeId:employeeId,
         company:company,
         password: hashPass,
