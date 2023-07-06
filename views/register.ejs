@@ -36,76 +36,77 @@
     
 
 <h1  class="text-center ftsz-24"> REGISTER</h1>
-<p class="status text-center" style="color: #fff;"> <%= mess %></p>
+<p class="status text-center" style="color: #fff;"> 
+    <%= mess %></p>
 <form action="/register" method="POST">
     <div class="form-group form-group-lg">
-        <label for="name" class="col-sm-3 col-form-label">
+        <label for="name" class="col-sm-8 offset-sm-2 col-form-label">
            Name:
         </label>
-        <div class="col-sm-9">
+        <div class="col-sm-8 offset-sm-2">
         <input type="text" name="name" id="name" class="form-control" >
     </div>
     </div>
     <div class="form-group  form-group-lg">
-        <label for="surname" class="col-sm-3 col-form-label">
+        <label for="surname" class="col-sm-8 offset-sm-2 col-form-label">
            Surname:
         </label>
-        <div class="col-sm-9">
+        <div class="col-sm-8 offset-sm-2">
         <input type="text" name="surname" id="surname" class="form-control">
     </div>
     </div>
     <div class="form-group  form-group-lg">
-        <label for="email" class="col-sm-3 col-form-label">
+        <label for="email" class="col-sm-8 offset-sm-2 col-form-label">
            Email Id:
         </label>
-        <div class="col-sm-9">
+        <div class="col-sm-8 offset-sm-2">
         <input type="email" name="email" ,id="email" class="form-control">
     </div>
     </div>
     <div class="form-group form-group-lg ">
-        <label for="employeeId" class="col-sm-3 col-form-label">
+        <label for="employeeId" class="col-sm-8 offset-sm-2 col-form-label">
            Employee Id:
         </label> 
-        <div class="col-sm-9">
+        <div class="col-sm-8 offset-sm-2">
         <input type="text" name="employeeId" ,id="employeeId" class="form-control">
     </div>
     </div>
     <div class="form-group form-group-lg ">
-        <label for="designation" class="col-sm-3 col-form-label">
+        <label for="designation" class="col-sm-8 offset-sm-2 col-form-label">
            Designation:
         </label> 
-        <div class="col-sm-9">
+        <div class="col-sm-8 offset-sm-2">
         <input type="text" name="designation" ,id="designation" class="form-control">
     </div>
     </div>
     <div class="form-group  form-group-lg">
-        <label for="company" class="col-sm-3 col-form-label">
+        <label for="company" class="col-sm-8 offset-sm-2 col-form-label">
            Company:
-        </label> <div class="col-sm-9">
+        </label> <div class="col-sm-8 offset-sm-2">
         <input type="text" name="company" ,id="company" class="form-control">
     </div>
     </div>
     <div class="form-group  form-group-lg">
-        <label for="password" class="col-sm-3 col-form-label">
+        <label for="password" class="col-sm-8 offset-sm-2 col-form-label">
            Password:
         </label>
-        <div class="col-sm-9">
+        <div class="col-sm-8 offset-sm-2">
         <input type="password" name="password" ,id="password" class="form-control">
     </div>
     </div>
     <div class="form-group  form-group-lg ">
-        <label for="password2" class="col-sm-3 col-form-label">
+        <label for="password2" class="col-sm-8 offset-sm-2 col-form-label">
            Confirm Password:
         </label>
-        <div class="col-sm-9">
+        <div class="col-sm-8 offset-sm-2">
         <input type="password" name="password2" ,id="password2" class="form-control">
     </div>
     </div>
 <br>
-    <button type="submit" class="btn btn-primary col-sm-8 offset-sm-2 text-center">Register</button>
+    <button type="submit" class="btn btn-primary col-sm-4 offset-sm-4 text-center">Register</button>
 </form>
-
-<a href="/">Login </a>
+<br>
+<a href="/" class="btn btn-info  col-sm-4 offset-sm-4 text-center">Login </a>
 
 </div>
 

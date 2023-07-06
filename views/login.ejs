@@ -24,25 +24,24 @@
 <h1 class="text-center ftsz-24">Login</h1>
 <p class="status text-center" style="color: rgba(255, 255, 255, 0.894);"> <%= mess %></p>
 <form action="/login" method="POST">
-    <div class="form-group  form-group-lg ">
-        <label for="Email" class="col-sm-3 col-form-label"> Email Id:</label>
-        <div class="col-sm-9" >
+    <div class="form-group  form-group-sm-2 ">
+        <label for="Email" class="col-sm-8 offset-sm-2 col-form-label"> Email Id:</label>
+        <div class="col-sm-8 offset-sm-2" >
     <input type="email" name="email" id="email" class="form-control" ></div></div>
 
-    <div class="form-group form-group-lg ">
-        <label for="password"  class="col-sm-3 col-form-label"> Password:</label>
-    <div class="col-sm-9">
+    <div class="form-group form-group-sm-2 ">
+        <label for="password"  class="col-sm-8 offset-sm-2 col-form-label"> Password:</label>
+    <div class="col-sm-8 offset-sm-2">
         <input type="password" name="password" id="password"  class="form-control">
     </div>
 </div>
 <br>
-    <button type="submit"  class="btn btn-primary  col-sm-8 offset-sm-2 text-center">Login</button>    
+    <button type="submit"  class="btn btn-primary  col-sm-4 offset-sm-4 text-center">Login</button>    
 </form>
 
 </div>
 <br>
-<br>
-<a href="/register">Register</a>
+<a href="/register" class="btn btn-info  col-sm-4 offset-sm-4 text-center">Register</a>
 
 
 

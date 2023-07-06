@@ -26,7 +26,7 @@ store.on("error", function (error) {
 app.use(
     session({
         secret: "this is key",
-        reSave: false,
+        reSave: true,
         saveUninitialized: false,
         store: store,
     })

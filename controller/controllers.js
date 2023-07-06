@@ -7,7 +7,7 @@ const isAuthMiddleware = (req, res, next) => {
     } else {
         res.render("login", { mess: "Not Authorized" });
     }
-};
+ };
 
 const getLogin = (req, res, next) => {
     res.render("login", { mess: "" });
@@ -40,7 +40,7 @@ const getRegister = (req, res, next) => {
 
 
 const postRegister = async (req, res, next) => {
-    const { name, surname,email,employeeId,designation, company, password, password2 } = req.body;
+    const { name, surname,email,designation,employeeId, company, password, password2 } = req.body;
     if (
         name.length < 1 ||
         email.length < 1 ||
@@ -60,7 +60,7 @@ const postRegister = async (req, res, next) => {
         name: name,
         surname: surname,
         email: email,
-        designation :designation,
+        designation:designation,
         employeeId:employeeId,
         company:company,
         password: hashPass,
