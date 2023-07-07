@@ -32,7 +32,7 @@ app.use(
     })
 );
 
-app.use("/",routes);
+app.use(routes);
 
 app.get('/users', paginatedResults(User), (req, res) => {
     res.json(res.paginatedResults)
