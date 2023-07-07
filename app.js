@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static( path.join(process.cwd(),"public")));
 app.set("view engine", "ejs");
-app.set("views", "views");
+app.set("views",path.join(__dirname, 'views'));
 
 
 const store = new MongoDBStore({
@@ -33,6 +33,7 @@ app.use(
 );
 
 app.use("/",routes);
+
 app.get('/users', paginatedResults(User), (req, res) => {
     res.json(res.paginatedResults)
   })
